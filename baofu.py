@@ -2,21 +2,27 @@
 # pp = random.randint(50,150)
 # print (pp)
 
+while True:
+    A = int(input("输入边A:"))
+    B = int(input("输入边B:"))
+    C = int(input("输入边C:"))
+    if A+B>C and A+C>B and B+C>A:
 
-# A = int(input("输入边A:"))
-# B = int(input("输入边B:"))
-# C = int(input("输入边C:"))
-#
-# if A+B>C and A+C>B and B+C>A:
-#     print("构成三角形")
-#     if A*A+B*B==C*C or A*A+C*C==B*B or B*B+C*C==A*A:
-#         print("直角三角形")
-#     elif A==B or A==C or B==C:
-#         print("构成等腰三角形")
-#         if A==B==C:
-#             print("等边三角形")
-# else:
-#     print("去去去，不是三角形。")
+        if A*A+B*B==C*C or A*A+C*C==B*B or B*B+C*C==A*A:
+            print("直角三角形")
+
+        elif A == B == C:
+            print("等边三角形")
+
+        elif (A==B) or (A==C)or (B==C):
+            print("构成等腰三角形")
+
+        else:
+            print("构成普通三角形")
+
+    else:
+        print("去去去，不是三角形。")
+        break
 
 
 
