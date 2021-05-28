@@ -62,23 +62,37 @@
 # print(t)
 
 
+
+
+
+
 # list = [1 , 4 , 7 , 5 , 8 , 2 , 1 , 3 , 4 , 5 , 9 , 7 , 6 , 1 , 10]
-# f = 0
-# j = 0
-# while f < 15:
+# for i in list:
 #     count = 0
-#     j = j + 1
-#     while j <= 10:
-#         if list[f] == j:
+#     for p in list:
+#         if i == p:
 #             count = count + 1
-#         print(list[f], count)
+#     print(i,"出现",count,"次")
 
 
-# 网上抄来的最后一题
-# from collections import Counter
-# list = [1 , 4 , 7 , 5 , 8 , 2 , 1 , 3 , 4 , 5 , 9 , 7 , 6 , 1 , 10]
-# list = Counter(list)
-# print(list)
+list = [1 , 4 , 7 , 5 , 8 , 2 , 1 , 3 , 4 , 5 , 9 , 7 , 6 , 1 , 10]
+list2 = []
+for i in list:
+    if i not in list2:
+        list2.append(i)
+for i in list2:
+    count = 0
+    for p in list:
+        if i == p:
+            count = count + 1
+    print(i,"出现",count,"次")
+
+#遍历表1，如果表1的数不在表2里，则把表一的数加进表2里。如果数在表2里，计数器等于0，表1的数和表2的循环对比，表2的数每在表1出现一次，计数器+1.
+#打印列表2中每个角标，出现了count次。
+
+
+
+
 
 
 
